@@ -250,13 +250,14 @@ footer {
 
 .footer-links {
 	margin: 30px 0;
+	font-size: 20px;
 }
 
+.footer-links .col,
 .footer-links ul {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	font-size: 20px;
 }
 
 .footer-icon-links {
@@ -297,7 +298,6 @@ footer {
 	}
 
 	.footer-links {
-		align-self: center;
 		text-align: center;
 	}
 }
@@ -391,7 +391,8 @@ footer {
 	.footer-content {
 		display: flex;
 		flex-direction: row;
-		align-items: start;
+		align-items: flex-start;
+		gap: 50px;
 	}
 
 	.footer-text {
@@ -401,8 +402,21 @@ footer {
 	.footer-links {
 		flex: 2;
 	}
+
 	.footer-icon-links {
 		flex: 1.5;
+	}
+
+	.footer-links ul {
+		text-align: left;
+		flex-direction: row;
+		width: 100%;
+		justify-content: space-around;
+	}
+
+	.footer-links,
+	.footer-icon-links {
+		margin: 0;
 	}
 
 	.copyright {
